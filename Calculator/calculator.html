@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Div class="container">
+        <h1>
+            Calculator
+        </h1>
+        <div>
+            <input id="display" type="text" >
+        </div>
+        
+        <div class="cal-btn">
+            <div>
+                <button id="btn9" onclick="
+                let val='9';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;                    
+                    ">9</button>
+                <button id="btn28" 
+                onclick="
+                val='8';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >8</button>
+                <button id="btn7"
+                onclick="
+                val='7';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >7</button>
+                <button id="btn*"
+                onclick="
+                val='*';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >*</button>
+
+            </div>
+            <div>
+                <button id="btn6"
+                onclick="
+                val='6';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >6</button>
+                <button id="btn5"
+                onclick="
+                val='5';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >5</button>
+                <button id="btn4"
+                onclick="
+                val='4';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >4</button>
+                <button id="btn/"
+                onclick="
+                val='/';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >/</button>
+            </div>
+            <div>
+                <button id="btn3"
+                onclick="
+                val='3';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >3</button>
+                <button id="btn2"
+                onclick="
+                val='2';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >2</button>
+                <button id="btn1"
+                onclick="
+                val='1';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >1</button>
+                <button id="btn+"
+                onclick="
+                val='+';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >+</button>
+            </div>
+            <div>
+                <button id="btnC"
+                onclick="
+                
+                first_val ='';
+                document.querySelector('#display').value=first_val;"
+                >C</button>
+                <button id="btn0"
+                onclick="
+                val='0';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >0</button>
+                <button id="btn="  onclick="
+                first_val =eval(first_val);
+                document.querySelector('#display').value=first_val;"
+                >=</button>
+                <button id="btn-"
+                onclick="
+                val='-';
+                first_val =first_val+val;
+                document.querySelector('#display').value=first_val;"
+                >-</button>
+            </div>
+           
+        </div>
+
+
+    </Div>
+
+    <script>
+
+        let first_val ='';
+        document.querySelector('#display').value=first_val;
+    </script>
+    
+</body>
+</html>
